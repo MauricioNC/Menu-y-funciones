@@ -12,26 +12,23 @@ void tabular(int x, int opc);
 
 int main ()
 {
-	
 	int x, y, opc;
 	
 	do
 	{
 		system("cls");
 		cout << "			----- * FUNCIONES * -----" << endl << endl;
-    	cout << "Elige una de las siguientes formulas: " << endl;
-    	cout << "1.- Formula 1" << endl;
-    	cout << "2.- Formula 2" << endl;
-    	cout << "2.- Formula 3" << endl;
-    	cout << "0.- Salir" << endl;
-    	cout << "---------------" << endl;
-    	cout << "OPCION: ";
-    	cin >> opc;
+		cout << "Elige una de las siguientes formulas: " << endl;
+		cout << "1.- Formula 1" << endl;
+		cout << "2.- Formula 2" << endl;
+		cout << "2.- Formula 3" << endl;
+		cout << "0.- Salir" << endl;
+		cout << "---------------" << endl;
+		cout << "OPCION: ";
+		cin >> opc;
     
 		if (opc == 0)
-		{
 			exit(0);
-		}
 		else if (opc == 1)
 		{
 			cout << "Ingresa el valor para x: ";
@@ -53,7 +50,6 @@ int main ()
 			cout << "Opcion invalida!";
 			getch();
 			system("cls");
-			
 		}
 		cout << "Presiona enter para volver al menu";
 		getch();
@@ -90,16 +86,13 @@ void tabular(int x, int opc)
 					cout << i << "		" << form3(i) << endl;
 				}
 			}
-		
 	}
 }
 void tabular()
 {
 	cout << "X, y	f(x, y)" << endl;
 	for (int i=1; i <= 5; i++)
-	{
 		cout << i << "		" << form2(i, i) << endl;
-	}
 }
 
 float form1(int x)
@@ -119,15 +112,8 @@ float form3(int x)
 	float res;
 	
 	if (x > 0)
-	{
 		return res = (2 * pow(x, 3));
-	}
 	else 
 		if (x <= 0)
-		{
 			return res = (3 * pow(x, 2));
-		}
 }
-
-
-
